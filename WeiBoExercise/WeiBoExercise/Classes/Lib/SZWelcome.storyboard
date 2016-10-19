@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="feK-4r-Ajx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="rXB-Yc-2MD">
+            <objects>
+                <viewController id="feK-4r-Ajx" customClass="SZWelcomeVC" customModule="WeiBoExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YS6-7j-gPM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yac-lz-wN6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tN6-Pl-Bbx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t18-Eo-LPf">
+                                <rect key="frame" x="113" y="120" width="150" height="180"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IQZ-8h-yDx">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.66217081" blue="0.32803459439999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="HZ9-Sb-afl"/>
+                                            <constraint firstAttribute="height" constant="150" id="jaf-M3-uPh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dha-05-3Yb">
+                                        <rect key="frame" x="0.0" y="150" width="150" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.66217081" blue="0.32803459439999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dha-05-3Yb" firstAttribute="leading" secondItem="t18-Eo-LPf" secondAttribute="leading" id="0Cm-xj-2rp"/>
+                                    <constraint firstAttribute="bottom" secondItem="dha-05-3Yb" secondAttribute="bottom" id="Dod-1H-tOa"/>
+                                    <constraint firstAttribute="width" constant="150" id="GZb-Pl-Gpu"/>
+                                    <constraint firstItem="IQZ-8h-yDx" firstAttribute="top" secondItem="t18-Eo-LPf" secondAttribute="top" id="Jyx-Db-I1b"/>
+                                    <constraint firstAttribute="height" constant="180" id="T2F-rS-uJx"/>
+                                    <constraint firstAttribute="trailing" secondItem="IQZ-8h-yDx" secondAttribute="trailing" id="ew9-8K-DTq"/>
+                                    <constraint firstItem="dha-05-3Yb" firstAttribute="top" secondItem="IQZ-8h-yDx" secondAttribute="bottom" id="ijW-lt-sYW"/>
+                                    <constraint firstItem="IQZ-8h-yDx" firstAttribute="leading" secondItem="t18-Eo-LPf" secondAttribute="leading" id="ti5-wJ-oRk"/>
+                                    <constraint firstAttribute="trailing" secondItem="dha-05-3Yb" secondAttribute="trailing" id="ukh-MH-TET"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t18-Eo-LPf" firstAttribute="top" secondItem="YS6-7j-gPM" secondAttribute="bottom" constant="100" id="QtP-B3-UHa"/>
+                            <constraint firstItem="t18-Eo-LPf" firstAttribute="centerX" secondItem="tN6-Pl-Bbx" secondAttribute="centerX" id="kGW-H9-iBL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bgView" destination="t18-Eo-LPf" id="yiB-D0-8zE"/>
+                        <outlet property="iconImage" destination="IQZ-8h-yDx" id="O7M-uw-89l"/>
+                        <outlet property="infolabel" destination="dha-05-3Yb" id="PAI-Nx-ux9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeH-Yo-I7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499" y="283"/>
+        </scene>
+    </scenes>
+</document>

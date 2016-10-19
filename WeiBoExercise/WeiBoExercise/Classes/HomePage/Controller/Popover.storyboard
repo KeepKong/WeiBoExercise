@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wBI-bo-7Rh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--PopoverVC-->
+        <scene sceneID="vsC-OD-oIh">
+            <objects>
+                <viewController id="wBI-bo-7Rh" customClass="SZPopoverVC" customModule="WeiBoExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RGP-fi-FeP"/>
+                        <viewControllerLayoutGuide type="bottom" id="2ho-DG-h73"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sXf-Cd-DRo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popover_background" translatesAutoresizingMaskIntoConstraints="NO" id="cIV-J6-e2T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="amV-DH-iYi">
+                                <rect key="frame" x="10" y="20" width="355" height="637"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="amV-DH-iYi" firstAttribute="leading" secondItem="sXf-Cd-DRo" secondAttribute="leading" constant="10" id="2FZ-e3-38r"/>
+                            <constraint firstItem="cIV-J6-e2T" firstAttribute="top" secondItem="RGP-fi-FeP" secondAttribute="bottom" constant="-20" id="6Z6-v0-Vll"/>
+                            <constraint firstItem="2ho-DG-h73" firstAttribute="top" secondItem="amV-DH-iYi" secondAttribute="bottom" constant="10" id="FSy-qa-gLD"/>
+                            <constraint firstAttribute="trailing" secondItem="amV-DH-iYi" secondAttribute="trailing" constant="10" id="Naf-9X-QuH"/>
+                            <constraint firstItem="amV-DH-iYi" firstAttribute="top" secondItem="RGP-fi-FeP" secondAttribute="bottom" id="Q7j-vd-PPt"/>
+                            <constraint firstItem="2ho-DG-h73" firstAttribute="top" secondItem="cIV-J6-e2T" secondAttribute="bottom" id="UVF-by-dCO"/>
+                            <constraint firstAttribute="trailing" secondItem="cIV-J6-e2T" secondAttribute="trailing" id="Upc-b6-gb5"/>
+                            <constraint firstItem="cIV-J6-e2T" firstAttribute="leading" secondItem="sXf-Cd-DRo" secondAttribute="leading" id="coO-ug-c5J"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ne-bc-Cgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157" y="467"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popover_background" width="217" height="49"/>
+    </resources>
+</document>

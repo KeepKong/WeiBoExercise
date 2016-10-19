@@ -1,0 +1,6 @@
+framework module Pods_WeiBoExercise {
+  umbrella header "Pods-WeiBoExercise-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,42 @@
+[{
+ "VCName" : "SZHomeNaviVC",
+ "title"  : "主页",
+ "imageName" : "tabbar_home"
+},
+
+{
+
+ 
+ "VCName" : "SZMessageNaviVC",
+ "title"  : "消息",
+ "imageName" : "tabbar_message_center"
+
+
+},
+ 
+ {
+ 
+ 
+ "VCName" : "SZAddNaviVC",
+ "title"  : "",
+ "imageName" : ""
+ 
+ 
+ },
+ 
+{
+
+ "VCName" : "SZDiscoverNaviVC",
+ "title"  : "发现",
+ "imageName" : "tabbar_discover"
+
+
+},
+{
+
+ "VCName" : "SZPersonalNaviVC",
+ "title"  : "我",
+ "imageName" : "tabbar_profile"
+
+}
+]
